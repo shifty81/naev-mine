@@ -17,7 +17,7 @@ meson setup builddir
 cd builddir
 meson compile
 
-# Run
+# Run (executable will be renamed from 'naev.py' to 'subspace' in future)
 ./naev.py
 ```
 
@@ -130,7 +130,7 @@ meson setup builddir
 cd builddir
 meson compile
 
-# Run
+# Run (executable temporarily named 'naev.py', will be renamed to 'subspace')
 ./naev.py
 ```
 
@@ -384,7 +384,7 @@ git clone https://github.com/shifty81/naev-mine.git subspace
 cd subspace
 git submodule update --init --recursive
 meson setup builddir && cd builddir && meson compile
-./naev.py
+./naev.py  # (will be renamed to 'subspace' in future)
 ```
 
 **See you in space! 🚀**

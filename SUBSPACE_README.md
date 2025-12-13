@@ -134,10 +134,10 @@ git submodule update --init --recursive
 meson setup builddir .
 cd builddir
 meson compile
-./naev.py
+./naev.py  # Note: Still named 'naev.py' - will be renamed to 'subspace' in future
 ```
 
-**Note**: The executable is still named `naev.py` during development. This will be renamed to `subspace` in future releases.
+**⚠️ Temporary Naming**: The executable is currently named `naev.py` throughout the documentation as SubSpace is in early development. This will be renamed to `subspace` in a future release once the rebranding is complete.
 
 #### Development Build
 
@@ -145,7 +145,7 @@ meson compile
 meson setup builddir --buildtype=debug -Db_sanitize=address
 cd builddir
 meson compile
-./naev.py
+./naev.py  # (will be renamed to 'subspace' in future)
 ```
 
 #### Release Build
@@ -154,7 +154,7 @@ meson compile
 meson setup builddir --buildtype=release -Db_lto=true
 cd builddir
 meson compile
-./naev.py
+./naev.py  # (will be renamed to 'subspace' in future)
 ```
 
 ## Contributing

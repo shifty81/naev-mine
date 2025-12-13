@@ -9,13 +9,15 @@
     <name>SubSpace DevTeam</name>
   </developer>
   <icon type="stock">org.subspace.SubSpace</icon>
+  <!-- Note: Repository URLs will be updated when official SubSpace organization is established -->
   <url type="homepage">https://github.com/shifty81/naev-mine</url>
   <url type="bugtracker">https://github.com/shifty81/naev-mine/issues</url>
   <url type="contribute">https://github.com/shifty81/naev-mine</url>
   <url type="vcs-browser">https://github.com/shifty81/naev-mine</url>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <update_contact>subspace-dev@example.com</update_contact>
+  <!-- Update contact will be established once project infrastructure is set up -->
+  <!-- <update_contact>TBD</update_contact> -->
   <recommends>
     <control>pointing</control>
     <control>keyboard</control>
@@ -75,24 +77,25 @@
   </releases>
   <launchable type="desktop-id">org.subspace.SubSpace.desktop</launchable>
   <screenshots>
+    <!-- Note: Screenshots currently show base Naev game. SubSpace-specific screenshots will be added once features are implemented. -->
     <screenshot type="default">
-      <caption>Flying around in space</caption>
+      <caption>Flying around in space (Base Naev - SubSpace features coming soon)</caption>
       <image>https://naev.org/imgs/screenshots_0.12.0/png/wunomi.png</image>
     </screenshot>
     <screenshot>
-      <caption>The shipyard interface</caption>
+      <caption>The shipyard interface (Base Naev - SubSpace features coming soon)</caption>
       <image>https://naev.org/imgs/screenshots_0.12.0/png/llama_voyager.png</image>
     </screenshot>
     <screenshot>
-      <caption>A lucky find on a derelict</caption>
+      <caption>A lucky find on a derelict (Base Naev - SubSpace features coming soon)</caption>
       <image>https://naev.org/imgs/screenshots_0.12.0/png/lucky_find.png</image>
     </screenshot>
     <screenshot>
-      <caption>The in-game Holo Archives contains a lot of information</caption>
+      <caption>The in-game Holo Archives contains information (Base Naev - SubSpace features coming soon)</caption>
       <image>https://naev.org/imgs/screenshots_0.12.0/png/pirate_kestrel.png</image>
     </screenshot>
     <screenshot>
-      <caption>Another routine patrol</caption>
+      <caption>Another routine patrol (Base Naev - SubSpace features coming soon)</caption>
       <image>https://naev.org/imgs/screenshots_0.12.0/png/rocket_party.png</image>
     </screenshot>
   </screenshots>
