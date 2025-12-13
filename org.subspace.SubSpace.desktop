@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=SubSpace
+Comment=2D space trading and combat game with dimensional travel
+Icon=org.subspace.SubSpace
+Exec=subspace
+Categories=Game;AdventureGame;ActionGame;RolePlaying
+Keywords=space;trading;combat;rpg;scifi;
