@@ -8,6 +8,11 @@
 NAEV README
 ===========
 
+> **Note**: This repository is being used to develop **SubSpace**, a derivative project based on Naev.
+> See [SUBSPACE_README.md](SUBSPACE_README.md) for SubSpace-specific information.
+> See [SUBSPACE_PROJECT.md](SUBSPACE_PROJECT.md) for feature roadmap and development plans.
+> See [LICENSING_COMPLIANCE.md](LICENSING_COMPLIANCE.md) for licensing information.
+
 ![Naev Logo](https://naev.org/imgs/naev.png)
 
 **Naev (/nɑ.ɛv/)** is an open source 2D space trading and combat game,

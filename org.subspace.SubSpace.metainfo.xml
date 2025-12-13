@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2025 SubSpace DevTeam -->
+<!-- Based on Naev - Copyright 2025 Naev DevTeam -->
+<component type="desktop-application">
+  <id>org.subspace.SubSpace</id>
+  <name>SubSpace</name>
+  <summary>2D space trading and combat game with dimensional travel</summary>
+  <developer id="org.subspace">
+    <name>SubSpace DevTeam</name>
+  </developer>
+  <icon type="stock">org.subspace.SubSpace</icon>
+  <!-- Note: Repository URLs will be updated when official SubSpace organization is established -->
+  <url type="homepage">https://github.com/shifty81/naev-mine</url>
+  <url type="bugtracker">https://github.com/shifty81/naev-mine/issues</url>
+  <url type="contribute">https://github.com/shifty81/naev-mine</url>
+  <url type="vcs-browser">https://github.com/shifty81/naev-mine</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <!-- Update contact will be established once project infrastructure is set up -->
+  <!-- <update_contact>TBD</update_contact> -->
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </recommends>
+  <branding>
+    <color type="primary" scheme_preference="light">#62a0ea</color>
+    <color type="primary" scheme_preference="dark">#1c71d8</color>
+  </branding>
+  <description>
+    <p>
+      SubSpace is a 2D space trading and combat game derived from Naev, featuring unique dimensional travel mechanics.
+    </p>
+    <p>
+      You pilot a space ship from a top-down perspective, and are free to explore, trade, and engage in combat. 
+      SubSpace introduces dimensional corridors that enable faster-than-light travel with unique risks and rewards.
+      Navigate through SubSpace anomalies, build territory control, engage in multiplayer cooperation, and shape 
+      a living universe.
+    </p>
+    <p>
+      SubSpace features include:
+    </p>
+    <ul>
+      <li>Open galaxy exploration with hundreds of star systems</li>
+      <li>Dynamic combat with various weapon systems and ship types</li>
+      <li>Extensive trading and economic simulation</li>
+      <li>Story missions and procedural content</li>
+      <li>Ship customization with dozens of ships and hundreds of outfits</li>
+      <li>Complex faction relationships and reputation system</li>
+      <li>SubSpace dimensional travel with unique hazards</li>
+      <li>Multiplayer features and cooperative gameplay (planned)</li>
+      <li>Territory control and player factions (planned)</li>
+      <li>Enhanced crafting and manufacturing (planned)</li>
+    </ul>
+    <p>
+      SubSpace is derived from the Naev project (https://naev.org) and is licensed under GPL-3.0-or-later.
+      All original Naev credits are preserved, and this derivative work maintains full open source compliance.
+    </p>
+  </description>
+  <categories>
+    <category>Game</category>
+    <category>AdventureGame</category>
+    <category>ActionGame</category>
+    <category>RolePlaying</category>
+  </categories>
+  <releases>
+    <release version="0.1.0-alpha" type="development" date="2025-12-13">
+      <description>
+        <p>Initial SubSpace development release based on Naev 0.13.0-beta.4</p>
+        <ul>
+          <li>Project foundation established</li>
+          <li>Documentation and licensing compliance completed</li>
+          <li>Feature roadmap defined</li>
+          <li>Rebranding in progress</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <launchable type="desktop-id">org.subspace.SubSpace.desktop</launchable>
+  <screenshots>
+    <!-- Note: Screenshots currently show base Naev game. SubSpace-specific screenshots will be added once features are implemented. -->
+    <screenshot type="default">
+      <caption>Flying around in space (Base Naev - SubSpace features coming soon)</caption>
+      <image>https://naev.org/imgs/screenshots_0.12.0/png/wunomi.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The shipyard interface (Base Naev - SubSpace features coming soon)</caption>
+      <image>https://naev.org/imgs/screenshots_0.12.0/png/llama_voyager.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>A lucky find on a derelict (Base Naev - SubSpace features coming soon)</caption>
+      <image>https://naev.org/imgs/screenshots_0.12.0/png/lucky_find.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The in-game Holo Archives contains information (Base Naev - SubSpace features coming soon)</caption>
+      <image>https://naev.org/imgs/screenshots_0.12.0/png/pirate_kestrel.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Another routine patrol (Base Naev - SubSpace features coming soon)</caption>
+      <image>https://naev.org/imgs/screenshots_0.12.0/png/rocket_party.png</image>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.0">
+    <content_attribute id="violence-fantasy">moderate</content_attribute>
+    <content_attribute id="drugs-alcohol">mild</content_attribute>
+    <content_attribute id="language-humor">moderate</content_attribute>
+    <content_attribute id="money-gambling">mild</content_attribute>
+  </content_rating>
+  <provides>
+    <binary>subspace</binary>
+  </provides>
+</component>
