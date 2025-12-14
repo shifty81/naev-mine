@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "rust-lang.rust-analyzer",
+        "mesonbuild.mesonbuild",
+        "vadimcn.vscode-lldb",
+        "sumneko.lua",
+        "ms-python.python",
+        "ms-python.debugpy"
+    ]
+}

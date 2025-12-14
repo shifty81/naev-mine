@@ -53,6 +53,10 @@ We've created comprehensive documentation covering all aspects of the SubSpace p
 
 | File | Size | Purpose | Audience |
 |------|------|---------|----------|
+| [BUILD_GUIDE.md](BUILD_GUIDE.md) | 18K | Complete build/launch/test guide | Developers |
+| [DEVELOPER_WORKFLOW.md](DEVELOPER_WORKFLOW.md) | 21K | Visual workflow diagrams | Developers |
+| [VISUAL_GUIDE.md](VISUAL_GUIDE.md) | 17K | Quick visual reference | Developers, Users |
+| [REBRANDING_SUMMARY.md](REBRANDING_SUMMARY.md) | 12K | Rebranding changes summary | Developers |
 | [CONTRIBUTING_SUBSPACE.md](CONTRIBUTING_SUBSPACE.md) | 15K | Contribution guide | Developers |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | 16K | Technical architecture | Developers |
 
@@ -112,10 +116,11 @@ We've created comprehensive documentation covering all aspects of the SubSpace p
 4. Join the community (Discord coming soon)
 
 ### Path 2: "I want to contribute code"
-1. Read [QUICKSTART.md](QUICKSTART.md) to get the game running
+1. Read [BUILD_GUIDE.md](BUILD_GUIDE.md) to set up your environment
 2. Read [CONTRIBUTING_SUBSPACE.md](CONTRIBUTING_SUBSPACE.md) thoroughly
 3. Study [ARCHITECTURE.md](ARCHITECTURE.md) to understand the codebase
-4. Pick an issue and start coding!
+4. Check [DEVELOPER_WORKFLOW.md](DEVELOPER_WORKFLOW.md) for workflows
+5. Pick an issue and start coding!
 
 ### Path 3: "I want to create content"
 1. Read [QUICKSTART.md](QUICKSTART.md) to understand the game
@@ -163,7 +168,10 @@ We've created comprehensive documentation covering all aspects of the SubSpace p
 → [SUBSPACE_VS_NAEV.md](SUBSPACE_VS_NAEV.md)
 
 ### "How do I get started?"
-→ [QUICKSTART.md](QUICKSTART.md)
+→ [QUICKSTART.md](QUICKSTART.md) and [BUILD_GUIDE.md](BUILD_GUIDE.md)
+
+### "How do I build and debug?"
+→ [BUILD_GUIDE.md](BUILD_GUIDE.md) and [VISUAL_GUIDE.md](VISUAL_GUIDE.md)
 
 ### "How can I contribute?"
 → [CONTRIBUTING_SUBSPACE.md](CONTRIBUTING_SUBSPACE.md)
@@ -258,6 +266,8 @@ When updating documentation:
 **Essential Links**:
 - 🚀 [Start Here](QUICKSTART.md)
 - 📖 [Full README](SUBSPACE_README.md)
+- 🔧 [Build Guide](BUILD_GUIDE.md)
+- 🎨 [Visual Guide](VISUAL_GUIDE.md)
 - ⚖️ [Licensing](LICENSING_COMPLIANCE.md)
 - 🛠️ [Contributing](CONTRIBUTING_SUBSPACE.md)
 - 🏗️ [Architecture](ARCHITECTURE.md)

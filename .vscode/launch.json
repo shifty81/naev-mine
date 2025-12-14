@@ -1,0 +1,73 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "SubSpace (GDB)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/builddir/subspace",
+            "args": [
+                "-d", "${workspaceFolder}/builddir/meson_overlay.zip",
+                "-d", "${workspaceFolder}/dat",
+                "-d", "${workspaceFolder}/assets",
+                "-d", "${workspaceFolder}/builddir/dat",
+                "-d", "${workspaceFolder}"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "RUST_BACKTRACE",
+                    "value": "1"
+                },
+                {
+                    "name": "ALSOFT_LOGLEVEL",
+                    "value": "2"
+                }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build-subspace"
+        },
+        {
+            "name": "SubSpace (LLDB)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/builddir/subspace",
+            "args": [
+                "-d", "${workspaceFolder}/builddir/meson_overlay.zip",
+                "-d", "${workspaceFolder}/dat",
+                "-d", "${workspaceFolder}/assets",
+                "-d", "${workspaceFolder}/builddir/dat",
+                "-d", "${workspaceFolder}"
+            ],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "RUST_BACKTRACE": "1",
+                "ALSOFT_LOGLEVEL": "2"
+            },
+            "preLaunchTask": "build-subspace"
+        },
+        {
+            "name": "SubSpace (wrapper script)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/builddir/subspace.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "preLaunchTask": "build-subspace"
+        }
+    ]
+}
