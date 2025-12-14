@@ -69,7 +69,8 @@ utils/model-view-c/*.bin
 
 docs/manual/book
 
-.vscode
+# Keep .vscode for shared project configuration
+# .vscode
 .kdev4
 *.kdev4
 .cache

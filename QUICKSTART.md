@@ -17,11 +17,11 @@ meson setup builddir
 cd builddir
 meson compile
 
-# Run (executable will be renamed from 'naev.py' to 'subspace' in future)
-./naev.py
+# Run the SubSpace game
+./subspace.py
 ```
 
-**Note**: Currently runs as Naev - SubSpace features are under development!
+**Note**: SubSpace-specific features are under development!
 
 ## What is SubSpace?
 
@@ -130,8 +130,8 @@ meson setup builddir
 cd builddir
 meson compile
 
-# Run (executable temporarily named 'naev.py', will be renamed to 'subspace')
-./naev.py
+# Run SubSpace
+./subspace.py
 ```
 
 ### Windows
@@ -384,7 +384,7 @@ git clone https://github.com/shifty81/naev-mine.git subspace
 cd subspace
 git submodule update --init --recursive
 meson setup builddir && cd builddir && meson compile
-./naev.py  # (will be renamed to 'subspace' in future)
+./subspace.py
 ```
 
 **See you in space! 🚀**

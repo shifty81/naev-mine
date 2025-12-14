@@ -11,7 +11,7 @@ potfiles = custom_target(
 
 # Would want to be able to set the potfiles as a dependency, however, not possible as per below
 # https://github.com/mesonbuild/meson/issues/15053
-gettext_targets = i18n.gettext('naev',
+gettext_targets = i18n.gettext('subspace',
    data_dirs: meson.project_source_root() / 'po',
    args: [
       '--files-from', potfiles.full_path(),

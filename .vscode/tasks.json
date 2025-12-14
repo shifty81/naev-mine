@@ -1,0 +1,89 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "meson-setup",
+            "type": "shell",
+            "command": "meson",
+            "args": [
+                "setup",
+                "builddir",
+                ".",
+                "--buildtype=debug",
+                "-Db_sanitize=address"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "build-subspace",
+            "type": "shell",
+            "command": "meson",
+            "args": [
+                "compile",
+                "-C",
+                "builddir"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": [
+                "$gcc",
+                "$rustc"
+            ]
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "builddir"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "run-subspace",
+            "type": "shell",
+            "command": "./builddir/subspace.py",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "dependsOn": ["build-subspace"]
+        },
+        {
+            "label": "test-cargo",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "test",
+                "--workspace"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": [
+                "$rustc"
+            ]
+        }
+    ]
+}

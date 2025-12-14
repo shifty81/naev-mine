@@ -1,4 +1,4 @@
-project('naev', ['c', 'rust'],
+project('subspace', ['c', 'rust'],
    version : '0.13.0-beta.4',
    default_options : [
       'optimization=g',
@@ -22,8 +22,8 @@ cargo_needed_version = '>=1.77.2'
 copyright_year = 2025
 forced_fallbacks = get_option('force_fallback_for')
 
-issue_address = 'https://codeberg.org/naev/naev/issues'
-copyright_holder = 'Naev Dev Team'
+issue_address = 'https://github.com/shifty81/naev-mine/issues'
+copyright_holder = 'SubSpace Dev Team'
 
 doxtractor_sub = subproject('doxtractor')
 doxtractor = doxtractor_sub.get_variable('doxtractor')
@@ -81,7 +81,7 @@ summary('tag', version)
 # Initialization
 ndata_path = get_option('ndata_path')
 if ndata_path == ''
-   ndata_path = get_option('datadir') / 'naev'
+   ndata_path = get_option('datadir') / 'subspace'
 endif
 summary('NData Path', ndata_path, section: 'Features')
 
@@ -417,7 +417,7 @@ naevcrs = rust.bindgen(
 
    # First create the static library with C using meson
    naev_clib = static_library(
-      'naev', # Has to be called 'naev' or it won't link properly with the executable (why?)
+      'subspace', # Has to be called 'subspace' or it won't link properly with the executable (why?)
       naev_source,
       include_directories: include_dirs,
       dependencies: naev_deps,
@@ -510,7 +510,7 @@ naevcrs = rust.bindgen(
 
    # Finally, build the executable with Rust again, but using meson to link it all together
    naev_bin = executable(
-      'naev', # needed so the binary is named 'naev'
+      'subspace', # needed so the binary is named 'subspace'
       sources: naev_rs,
       # Have to make sure Rust uses the dependencies from Cargo
       rust_args: ['--extern', 'naev=libnaev.rlib', '-L', 'src' / target_triplet / rust_target / 'deps', '-L', 'src' / rust_target / 'deps'],
@@ -591,8 +591,22 @@ naevcrs = rust.bindgen(
       build_by_default: true
    )
 
+   subspace_py = configure_file(
+      input: join_paths('utils','build','subspace.py'),
+      output: 'subspace.py',
+      configuration: {
+         'build_root': meson.current_build_dir(),
+         'source_root': meson.project_source_root(),
+         'naev_bin' : naev_bin.full_path(),
+         'zip_overlay' : zip_overlay.full_path(),
+         'debug' : debug,
+         'debug_paranoid' : paranoid,
+      }
+   )
+   
+   # Keep naev.py as a compatibility symlink for existing scripts
    naev_py = configure_file(
-      input: join_paths('utils','build','naev.py'),
+      input: join_paths('utils','build','subspace.py'),
       output: 'naev.py',
       configuration: {
          'build_root': meson.current_build_dir(),
